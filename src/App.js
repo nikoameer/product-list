@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Product from './Product';
 
-function App() {
+function App () {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* List and reuse Product component */}
+      <Product name='iPhone' description='iPhone 11 120GB, black' price={1000} />
+      <Product name='MacBook Air' description='14" touch bar, Metal grey' price={1499} />
+      <Product name='MacBook Pro' description='16" touch bar, white' price={2000} />
     </div>
   );
 }
