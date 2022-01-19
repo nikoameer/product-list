@@ -1,0 +1,9 @@
+.product {
+  border: 1px solid red;
+  margin: 15px;
+  padding: 20px;
+}
+
+.error {
+  color: red;
+}

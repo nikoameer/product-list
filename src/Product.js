@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemDescription from './ItemDescription'
+import styles from './Product.module.css'
 
 // Fuction with properties as paratemeter
 //function Product (props) {
@@ -9,7 +10,7 @@ import ItemDescription from './ItemDescription'
 */
 function Product ({ name, description, price }) {
   return (
-    <div className="product">
+    <div className={styles.product}>
 
       {/* Listing/ Rendring each properties with headings */}
       {/* <h1>{props.name}</h1>
@@ -26,7 +27,7 @@ function Product ({ name, description, price }) {
       */}
       <ItemDescription name={name} description={description} />
       <h3>€{price}</h3>
-
+      <p className={styles.error}>Error!</p>
     </div >
   )
 }
